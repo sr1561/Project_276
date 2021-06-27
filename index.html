@@ -1,1 +1,52 @@
-Hello world
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            
+    </head>
+<body>
+    <script>
+        function biggerNumber (a,b){
+            // a>b ? return a : return b
+            if (a>b){
+                return a
+            }
+            else
+            return b
+        }
+       function sum2numbers(a,b){return a+b}
+       function mySum(a,b,c){
+           return sum2numbers(sum2numbers(a,b),c)
+       }
+
+        function BiggestNumber(a,b,c,d){
+            return biggerNumber(biggerNumber(biggerNumber(a,b),c),d)
+        }
+        function CheckParam(a,b,c){
+            if (typeof(a)&&typeof(b)&&typeof(c)){
+                return a+b+c
+            }
+            else return false
+        }
+
+        console.log('Biggest Numbers of 6,9,3,4 is ' +BiggestNumber (6,9,3,4))
+        console.log ( CheckParam('a',2,3) > 0 ? CheckParam(3,2,3) : 'one of parameters is not a number')
+        console.log ( CheckParam(6,2,3) != 0 ? 'sum of numbers is 3+2+3=' + CheckParam(3,2,3) : 'one of parameters is not a number')
+        console.log ('sum of 3 numbers 2,3,4 using function of sum 2 numbers is 2+3+4=' +mySum(2,3,4))
+
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            return inputVal
+        }
+        function greetingMoreThan10(){
+            getInputValue().length >10 ? console.log('Greeting ' +getInputValue()) : console.log('youe name length is less than 10')
+            return getInputValue()   
+        }
+    </script>
+       <input type="text" placeholder="Type something..." id="myInput">
+       <button type="button" onclick="greetingMoreThan10();">Write your full name (first with last)</button>
+   
+</body>
+</html> 
+
