@@ -36,7 +36,7 @@
 
         function getInputValue(){
             // Selecting the input element and get its value 
-            var inputVal = document.getElementById("myInput").value;
+            var inputVal = document.getElementById("myFirst").value+' ' + document.getElementById("myLast").value;
             return inputVal
         }
         function greetingMoreThan10(){
@@ -44,9 +44,9 @@
             return getInputValue()   
         }
     </script>
-       <input type="text" placeholder="Type something..." id="myInput">
-       <button type="button" onclick="greetingMoreThan10();">Write your full name (first with last)</button>
-   
+       <input type="text" placeholder="Type First Name..." id="myFirst">
+       <input type="text" placeholder="Type Last Name..." id="myLast">
+       <button type="button" onclick="greetingMoreThan10();">Send</button>
 </body>
 </html> 
 
