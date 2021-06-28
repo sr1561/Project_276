@@ -7,12 +7,12 @@
 <body>
     <script>
         function biggerNumber (a,b){
-            // a>b ? return a : return b
-            if (a>b){
-                return a
-            }
-            else
-            return b
+            a>b ?  a :  b ;
+            // if (a>b){
+            //     return a
+            // }
+            // else
+            // return b
         }
        function sum2numbers(a,b){return a+b}
        function mySum(a,b,c){
@@ -28,7 +28,7 @@
             }
             else return false
         }
-
+        
         console.log('Biggest Numbers of 6,9,3,4 is ' +BiggestNumber (6,9,3,4))
         console.log ( CheckParam('a',2,3) > 0 ? CheckParam(3,2,3) : 'one of parameters is not a number')
         console.log ( CheckParam(6,2,3) != 0 ? 'sum of numbers is 3+2+3=' + CheckParam(3,2,3) : 'one of parameters is not a number')
@@ -47,6 +47,7 @@
        <input type="text" placeholder="Type First Name..." id="myFirst">
        <input type="text" placeholder="Type Last Name..." id="myLast">
        <button type="button" onclick="greetingMoreThan10();">Send</button>
+       
 </body>
 </html> 
 
