@@ -8,11 +8,15 @@
     <script>
         function biggerNumber (a,b){
             a>b ?  a :  b ;
+            // Can be written like this :
             // if (a>b){
             //     return a
             // }
             // else
             // return b
+
+            // or
+            // return a>b ? a: b
         }
        function sum2numbers(a,b){return a+b}
        function mySum(a,b,c){
@@ -28,7 +32,7 @@
             }
             else return false
         }
-        
+        console.log('this is type of string ' +typeof (2))
         console.log('Biggest Numbers of 6,9,3,4 is ' +BiggestNumber (6,9,3,4))
         console.log ( CheckParam('a',2,3) > 0 ? CheckParam(3,2,3) : 'one of parameters is not a number')
         console.log ( CheckParam(6,2,3) != 0 ? 'sum of numbers is 3+2+3=' + CheckParam(3,2,3) : 'one of parameters is not a number')
